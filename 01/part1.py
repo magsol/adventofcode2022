@@ -6,10 +6,8 @@ elves = [[]]
 totals = []
 
 with open("01_p1.txt", "r") as f:
-    line_number = 0
     total = 0
-    for line in f:
-        line = line.strip()
+    for line.strip() in f:
         if len(line) > 0:
             # Another calorie count for the current elf.
 
@@ -21,7 +19,6 @@ with open("01_p1.txt", "r") as f:
             totals.append(total)
             total = 0
             elves.append([])
-        line_number += 1
 
 # Part 1: Find the Elf carrying the most Calories. 
 # How many total Calories is that Elf carrying?
